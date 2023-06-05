@@ -73,9 +73,3 @@ plt.savefig('gantt_chart.png', dpi=300, bbox_inches='tight')
 # Display the chart
 plt.show()
 
-# Add the chart to a word document
-document = Document()
-document.add_picture('gantt_chart.png', width=Pt(500))  # Set picture width to fit the document
-
-# Save the Word document
-document.save('gantt_chart.docx')
